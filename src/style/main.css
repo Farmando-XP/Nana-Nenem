@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #606c38;
+    --cor2: #b6c687;
+    --cor3: #dae9fa;
+    --cor4: #bbb7e5;
+    --cor5: #fefae0;
+    --cor6: #efbdbd;
+}
+
+header{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header nav a{
+    font-size: 1.8rem;
+}
+
+header nav .img{
+    background-color: var(--cor2);
+    padding: 1rem 0.8rem;
+    border-radius: 100%;
+}
+
+section#QuemSomos {
+    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+}
+
+section#QuemSomos article {
+    padding: 15px 0px 78px 80px;
+}
+section#QuemSomos article h1{
+    font-size: 2.9vw;
+    margin: 4rem 0 0;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+}
+section#QuemSomos article h2{
+    font-size: 1.6vw;
+    margin-bottom: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+}
+section#QuemSomos article p{
+    font-size: 1.4vw;
+    font-family: "Roboto", sans-serif;
+    margin: 4rem 0;
+}
+
+section#QuemSomos figure {
+    position: relative;
+    height: 75vh;
+}
+section#QuemSomos figure img {
+    display: block;
+    width: 80vh;
+    height: 80.3vh;
+}
+section#QuemSomos figure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 107.029%;
+    background: linear-gradient(to right, #fefae0 1%, transparent 100%);
+}
+
+/* Sobre a Loja */
+
+#Loja{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor6);
+
+}
+
+#Loja .carrossel{
+    margin: 5rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#Loja .carrossel .slider{
+    display: flex;
+    max-width: 30.7rem;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+#Loja .carrossel .slider .slide{
+    opacity: 0;
+    display: none;
+    border-radius: 1.5rem;    
+    border: 6px solid black;
+    transition: opacity 0.5s;
+}
+
+#Loja .carrossel .slider .slide img{
+    width: 30rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+#Loja .carrossel .slider .slide.active{
+    display: block;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+#Loja .carrossel .slider .slide.fadeOut {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#Loja .carrossel .sliderControls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;    
+}
+
+#Loja .carrossel .sliderControls .control{
+    background-color: #F9F9F9;
+    border-radius: 100%;
+    margin: 0 3rem;
+    cursor: pointer;
+}
+
+#Loja .carrossel .sliderControls .control i{
+    font-size: 1.8rem;
+    padding: 1.2rem 1.5rem;
+    color: var(--cor6)
+}
+
+
+#Loja .sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0 5rem;
+   
+}
+
+#Loja .sobre .mainTitle{
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0 1rem 5rem 1rem;
+}
+
+#Loja .sobre .mainText{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* Onde estamos */
+
+#Local{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor3);
+}
+
+#Local .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem 2rem 0;
+}
+
+#Local .title .mainTitle{
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#Local .title i{
+    font-size: 3rem;
+}
+
+#Local .mainText{
+    display: flex;
+    margin: 2rem 4rem;
+    padding: 3rem;
+}
+
+#Local .mainText .description{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+}
+
+#Local .mainText .map{
+    background-color: #D9D9D9;
+    margin: 0 1rem;
+    border-radius: 2rem;
+}
+
+#Local .mainText .map img{
+    padding: 1rem;
+}

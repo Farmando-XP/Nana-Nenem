@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/components/header.css">
-    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Nana Nenêm</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#">HOME</a>
-            <a href="#">QUEM SOMOS</a>
-            <a href="#">LOJA</a>
-            <a href="index.html"><img src="img/Logo.png" alt="Logo nana nenêm"></a>
-            <a href="#">PRODUTOS</a>
-            <a href="#">LOCALIZÇÃO</a>
-            <a href="#">MAIS</a>
+            <a href="#">Home</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Loja</a>
+            <a href="index.html" class="img"><img src="assets/img/Logo.png" alt="Logo nana nenêm"></a>
+            <a href="#">Produtos</a>
+            <a href="#">Localização</a>
+            <a href="#">Mais</a>
         </nav>
     </header>
-
     <main>
+        <!-- Quem Somos -->
         <section id="QuemSomos">
             <article>
                 <h1>QUEM SOMOS?</h1>
@@ -43,11 +46,48 @@
                 </aside>
             </article>
             <figure>
-                <img src="img/casa-home.jpg" alt="imagem-de-uma-casa" id="imgQuemSomos">
+                <img src="assets/img/Crianças.jpeg" alt="imagem-de-uma-casa" id="imgQuemSomos">
             </figure>
         </section>
+        <!-- Loja -->
+        <section id="Loja">
+            <div class="carrossel">
+                <div class="slider">
+                    <div id="slide1" class="slide active"><img src="assets/img/casa-home.jpg" alt=""></div>
+                    <div id="slide2" class="slide"><img src="assets/img/casa-home.jpg" alt=""></div>
+                    <div id="slide3" class="slide"><img src="assets/img/casa-home.jpg" alt=""></div>
+                </div>
+                <div class="sliderControls">
+                    <div class="control" id="back"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="control" id="next"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="sobre">
+                <h2 class="mainTitle">Loja</h2>
+                <div class="mainText">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eius ab optio facere numquam tempore aspernatur possimus! Obcaecati suscipit libero, adipisci dicta qui sit, ipsam est non enim esse voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorum maiores optio tempora quae iste recusandae vero perferendis consequuntur, laboriosam provident maxime at quo? In voluptatem neque ea. Aspernatur, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nobis! Harum suscipit consequuntur repellendus magnam quaerat error blanditiis nobis hic libero molestiae. Veniam ratione tempora est minima cupiditate neque consequuntur.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Local -->
+        <section id="Local">
+            <div class="title">
+                <h2 class="mainTitle">Onde estamos?</h2>
+                <i class="fa-solid fa-baby"></i>
+            </div>
+            <div class="mainText">
+                <div class="map">
+                    <img src="assets/img/localizacao 1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ipsum expedita culpa officiis consequuntur hic ipsa. Incidunt sapiente vero maiores autem. Numquam a exercitationem labore eveniet cumque voluptatum inventore facilis. Blanditiis fugiat non, vel reiciendis beatae tempora voluptates sint eligendi veniam officiis, repellat quaerat perferendis assumenda eius quos!</p>
+                </div>
+            </div>
+        </section>
     </main>
-
+    <footer></footer>
+    <script src="src/scripts/slider.js"></script>
+    <script src="https://kit.fontawesome.com/803e48205f.js" crossorigin="anonymous"></script>   
 </body>
 
 </html>
