@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: #606c38;
+    --cor2: #b6c687;
+    --cor3: #dae9fa;
+    --cor4: #bbb7e5;
+    --cor5: #fefae0;
+    --cor6: #efbdbd;
+}
+header{
+    background-color: var(--cor1);
+    padding: 10px 70px;
+}
+header img{
+    width: 85px;
+    border-radius: 50%;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--cor5);
+    font-size: 1.2vw;
+    transition: 0.8s;
+}
+header nav a:hover{
+    color: #c7c5b7;
+}
