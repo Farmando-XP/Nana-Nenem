@@ -49,11 +49,11 @@ class Slider{
 
     // função que manda o slide para frente
     nextSlide(){
+        console.log(this.slides.length)
         if(this.moving){
             return 0;
         }
-
-        else if(this.slide === 2){
+        else if(this.slide === (this.slides.length - 1)){
             const index = 0;
             this.changeSlide(index);
         }
